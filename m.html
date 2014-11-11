@@ -68,7 +68,7 @@ var color = d3.scale.category10();
  
 d3.csv("data/cadata.csv", function(error, data) {
   var domainByTrait = {},
-      traits = d3.keys(data[0]).filter(function(d) { return d !== "longitude" || d!== "latitude"; }),
+      traits = d3.keys(data[0]).filter(function(d) { return d !== "latitude;longitude"; }),
       n = traits.length;
  
   traits.forEach(function(trait) {
