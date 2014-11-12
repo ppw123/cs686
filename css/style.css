@@ -1,0 +1,55 @@
+body { 
+  padding: 30px; 
+}
+.clearer{
+  clear:both;
+}
+
+.country {
+  fill: #ccc;
+  stroke: transparent;
+  stroke-width: 0px;
+  cursor:pointer;
+}
+.country:hover{
+  opacity:0.9;
+}
+.marker {
+  fill: #f6d622;
+  opacity: 1; 
+  stroke-width:1;
+  stroke:#FFF;
+}
+.marker:hover {
+  fill: #f6c342;
+}
+
+@media print
+{    
+  .no-print, .no-print *, .dynatable-per-page, .dynatable-search, .dynatable-pagination-links, .tooltip, .filters
+  {
+      display: none !important;
+  }
+  .country {
+    fill:#f9f9f9 !important;
+    stroke-width:0.2 !important;
+    stroke: #BBB !important;
+  }
+  .marker {
+    fill: #f6c38d;
+    opacity: 1; 
+    stroke-width:1;
+    stroke:#898989;
+  }
+}
+
+#map {
+  margin-left: 0;
+  margin-right: 0;
+  top:5px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  box-shadow: none;
+  position: relative;
+  margin: 0 15px 0 15px;
+}
