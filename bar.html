@@ -2,12 +2,32 @@
 <!-- Generated with d3-generator.com -->
 <html>
   <head>
-     <title>Bar Chart</title>
+     <title>Bar Chart for house data</title>
      <meta http-equiv="X-UA-Compatible" content="IE=9">
   </head>
   <body>
   <div>
-   <select id="inputCategoryColumn"><option value="median house value">median house value</option><option value="median income">median income</option><option value="housing median age">housing median age</option><option value="total rooms">total rooms</option><option value="total bedrooms">total bedrooms</option><option value="population">population</option><option value="households">households</option><option value="latitude">latitude</option><option value="longitude ">longitude </option></select>
+  <span>
+    <a href="index.html">Go Back << </a>
+  </span>
+<h1>Bar chart for house data</h1>
+<h2>bar chart</h2>
+<div>
+  <ul>
+  <li>
+    You can choose which data to visulize in the bar
+  </li>
+  <li>
+    Y-axis is the latitude and longitude
+  </li>
+  <li>
+    The data <a href="data/cadata.csv">cadata.csv</a>
+  </li>
+  </ul>
+</div>
+</div>
+  <div>
+   <select id="inputCategoryColumn"><option value="median house value">median house value</option><option value="median income">median income</option><option value="housing median age">housing median age</option><option value="total rooms">total rooms</option><option value="total bedrooms">total bedrooms</option><option value="population">population</option><option value="households">households</option></select>
    <button onclick="bar()">Generate Bar</button>
    </div>
     <div id="chart"></div>
@@ -25,9 +45,9 @@ var barLabelPadding = 5; // padding between bar and bar labels (left)
 var gridLabelHeight = 18; // space reserved for gridline labels
 var gridChartOffset = 3; // space between start of grid and first bar
 var maxBarWidth = 820; // width of the bar with the max value
- 
+
 // accessor functions 
-var barLabel = function(d) { return d['latitude'] + " " + d['longitude']; };
+var barLabel = function(d) { return d['latitude;longitude']; };
 var barValue = function(d) { return parseFloat(d[option]); };
  
 // scales
